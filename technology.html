@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Technology</title>
+  </head>
+  <header class="nav">
+    <input type="checkbox" id="nav-check" />
+    <div class="nav-header">
+      <div class="nav-title">De Leonismo Gallery</div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="cars.html">Cars</a>
+      <a href="desserts.html">Cakes and Desserts</a>
+      <a href="technology.html">Technology</a>
+    </div>
+  </header>
+  <body>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+          src="https://media.architecturaldigest.com/photos/62e17d8c82adcf7a6969f404/4:3/w_3747,h_2810,c_limit/Space%20Perspective%20Exterior%20Hero%20Space.jpg"
+          style="width: 100%"
+        />
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          src="https://wallpapers.com/images/hd/4k-nature-at-golden-hour-5281oz5sljar0zfm.jpg"
+          style="width: 100%"
+        />
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+          src="https://cdn.pixabay.com/photo/2017/10/10/07/48/hills-2836301__340.jpg"
+          style="width: 100%"
+        />
+        <div class="text"></div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="container">
+      <div id="modal" class="modal">
+        <div class="modal-container">
+          <img id="current" src="" alt="" />
+        </div>
+      </div>
+      <div class="imgs">
+        <div class="img-container">
+          <img
+            src="https://www.imf.org/-/media/Images/IMF/Blog/Migrated/BLOG-WEO-CH-4-1024x600-Qingdao-China-AI-Sipa-Asia-Sipa-USA-Newscom-sipaphotoseight001281.ashx"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://qph.cf2.quoracdn.net/main-qimg-fdc2ab569592f5fe0101d8e5e20dfbd5-lq"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://gforgadget.com/wp-content/uploads/2022/02/dji-mavic-air-2-drone.jpg"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://cdn.hiconsumption.com/wp-content/uploads/2022/02/Best-Gadgets-for-Men-0-Hero-1074x711.jpg"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://i.pinimg.com/originals/75/d9/c6/75d9c6ed7781dec8624417c77b497b1f.png"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://techresearchonline.com/wp-content/uploads/2022/06/product1-1-1024x1024.webp"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://m.media-amazon.com/images/I/616W8cRY2AL._AC_UY1000_.jpg"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://mobiletrans.wondershare.com/images/images2022/cool-gadgets-for-teens-1.jpg"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy_tjWxZiRv00-9GsvUsYUlCdaZd3UFlr_zA&usqp=CAU"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+
+  <script>
+    const current = document.querySelector("#current");
+    let enlargeMessages = document.querySelectorAll(".photo-overlay h1");
+    const modal = document.getElementById("modal");
+    const overlay = document.querySelectorAll(".photo-overlay");
+    const modalContainer = document.querySelector(".modal-container");
+
+    for (let i = 0; i < enlargeMessages.length; i++) {
+      enlargeMessages[i].addEventListener("click", imgClick);
+    }
+
+    window.addEventListener("click", clickOutside);
+
+    function imgClick(e) {
+      modal.style.display = "block";
+      current.src = e.target.parentNode.previousElementSibling.src;
+    }
+
+    function clickOutside(e) {
+      if (e.target == modal || e.target == modalContainer) {
+        modal.style.display = "none";
+      }
+    }
+
+    $(".slider").each(function () {
+      var $this = $(this);
+      var $group = $this.find(".slide_group");
+      var $slides = $this.find(".slide");
+      var bulletArray = [];
+      var currentIndex = 0;
+      var timeout;
+
+      function move(newIndex) {
+        var animateLeft, slideLeft;
+
+        advance();
+
+        if ($group.is(":animated") || currentIndex === newIndex) {
+          return;
+        }
+
+        bulletArray[currentIndex].removeClass("active");
+        bulletArray[newIndex].addClass("active");
+
+        if (newIndex > currentIndex) {
+          slideLeft = "100%";
+          animateLeft = "-100%";
+        } else {
+          slideLeft = "-100%";
+          animateLeft = "100%";
+        }
+
+        $slides.eq(newIndex).css({
+          display: "block",
+          left: slideLeft,
+        });
+        $group.animate(
+          {
+            left: animateLeft,
+          },
+          function () {
+            $slides.eq(currentIndex).css({
+              display: "none",
+            });
+            $slides.eq(newIndex).css({
+              left: 0,
+            });
+            $group.css({
+              left: 0,
+            });
+            currentIndex = newIndex;
+          }
+        );
+      }
+
+      function advance() {
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+          if (currentIndex < $slides.length - 1) {
+            move(currentIndex + 1);
+          } else {
+            move(0);
+          }
+        }, 4000);
+      }
+
+      $(".next_btn").on("click", function () {
+        if (currentIndex < $slides.length - 1) {
+          move(currentIndex + 1);
+        } else {
+          move(0);
+        }
+      });
+
+      $(".previous_btn").on("click", function () {
+        if (currentIndex !== 0) {
+          move(currentIndex - 1);
+        } else {
+          move(3);
+        }
+      });
+
+      $.each($slides, function (index) {
+        var $button = $('<a class="slide_btn">&bull;</a>');
+
+        if (index === currentIndex) {
+          $button.addClass("active");
+        }
+        $button
+          .on("click", function () {
+            move(index);
+          })
+          .appendTo(".slide_buttons");
+        bulletArray.push($button);
+      });
+
+      advance();
+    });
+  </script>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</html>

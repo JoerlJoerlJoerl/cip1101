@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cars</title>
+  </head>
+  <header class="nav">
+    <input type="checkbox" id="nav-check" />
+    <div class="nav-header">
+      <div class="nav-title">De Leonismo Gallery</div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="cars.html">Cars</a>
+      <a href="desserts.html">Cakes and Desserts</a>
+      <a href="technology.html">Technology</a>
+    </div>
+  </header>
+  <body>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+          src="https://www.securitybank.com/car-buyers-guide/wp-content/uploads/2017/07/adventure.jpg"
+          style="width: 100%"
+        />
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrhWOoRNWMrleTsxBOFvR6XM5DzBk7ZTeFMJ7mct1W8T-4D6ljdtGMS6KTWN2A3qzfLE6uSLiR85ysEMtM2J2ihCZLQI0mAeMkih8k6_GXIGTSUYrlCU_lzxfXtBpyAvreV3FlHZKGG0fA-_Rr6N24bOuwWW6MQ4zvwCUk7urdHb99HMgSo-wDg1j9Ew/s1024/2023_ford_ranger_platinum_00.jpg"
+        />
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+          src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2021/09/Marussia-B2-1-Cropped.jpg"
+          style="width: 100%"
+        />
+        <div class="text"></div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="container">
+      <div id="modal" class="modal">
+        <div class="modal-container">
+          <img id="current" src="" alt="" />
+        </div>
+      </div>
+      <div class="imgs">
+        <div class="img-container">
+          <img
+            src="https://www.gannett-cdn.com/-mm-/4881269fbefb92dc16b107e6c55a8c3734eb5d8c/c=570-1240-4280-3330/local/-/media/USATODAY/USATODAY/2014/09/03/1409768574000-Acura-TLX-15.jpg"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://carleasespecialoffers.co.uk/assets/images/lexus-is-for-top-5-asian-cars.jpg"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrhWOoRNWMrleTsxBOFvR6XM5DzBk7ZTeFMJ7mct1W8T-4D6ljdtGMS6KTWN2A3qzfLE6uSLiR85ysEMtM2J2ihCZLQI0mAeMkih8k6_GXIGTSUYrlCU_lzxfXtBpyAvreV3FlHZKGG0fA-_Rr6N24bOuwWW6MQ4zvwCUk7urdHb99HMgSo-wDg1j9Ew/s1024/2023_ford_ranger_platinum_00.jpg"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/1b/2016_Toyota_HiLux_Invincible_D-4D_4WD_2.4_Front.jpg"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://www.mercedes-benz.co.uk/passengercars/the-brand/explore-mercedes-benz/design-concept-car/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile/image.MQ6.8.20201208124649.jpeg"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://cdn.motor1.com/images/mgl/G4z31/s3/tesla-roadster.jpg"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://i.pinimg.com/originals/7e/99/9b/7e999b20221ddbbc4b8d1248de6e48c7.jpg"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://www.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/rolls_royce_phantom_top_10.jpg"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://w0.peakpx.com/wallpaper/851/45/HD-wallpaper-1931-cord-l-29-convertible-car-convertible-nature-classic-old-field-1931.jpg"
+            alt=""
+          />
+          <div class="photo-overlay">
+            <h1>Interested? Buy Now!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+
+  <script>
+    const current = document.querySelector("#current");
+    let enlargeMessages = document.querySelectorAll(".photo-overlay h1");
+    const modal = document.getElementById("modal");
+    const overlay = document.querySelectorAll(".photo-overlay");
+    const modalContainer = document.querySelector(".modal-container");
+
+    for (let i = 0; i < enlargeMessages.length; i++) {
+      enlargeMessages[i].addEventListener("click", imgClick);
+    }
+
+    window.addEventListener("click", clickOutside);
+
+    function imgClick(e) {
+      modal.style.display = "block";
+      current.src = e.target.parentNode.previousElementSibling.src;
+    }
+
+    function clickOutside(e) {
+      if (e.target == modal || e.target == modalContainer) {
+        modal.style.display = "none";
+      }
+    }
+
+    $(".slider").each(function () {
+      var $this = $(this);
+      var $group = $this.find(".slide_group");
+      var $slides = $this.find(".slide");
+      var bulletArray = [];
+      var currentIndex = 0;
+      var timeout;
+
+      function move(newIndex) {
+        var animateLeft, slideLeft;
+
+        advance();
+
+        if ($group.is(":animated") || currentIndex === newIndex) {
+          return;
+        }
+
+        bulletArray[currentIndex].removeClass("active");
+        bulletArray[newIndex].addClass("active");
+
+        if (newIndex > currentIndex) {
+          slideLeft = "100%";
+          animateLeft = "-100%";
+        } else {
+          slideLeft = "-100%";
+          animateLeft = "100%";
+        }
+
+        $slides.eq(newIndex).css({
+          display: "block",
+          left: slideLeft,
+        });
+        $group.animate(
+          {
+            left: animateLeft,
+          },
+          function () {
+            $slides.eq(currentIndex).css({
+              display: "none",
+            });
+            $slides.eq(newIndex).css({
+              left: 0,
+            });
+            $group.css({
+              left: 0,
+            });
+            currentIndex = newIndex;
+          }
+        );
+      }
+
+      function advance() {
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+          if (currentIndex < $slides.length - 1) {
+            move(currentIndex + 1);
+          } else {
+            move(0);
+          }
+        }, 4000);
+      }
+
+      $(".next_btn").on("click", function () {
+        if (currentIndex < $slides.length - 1) {
+          move(currentIndex + 1);
+        } else {
+          move(0);
+        }
+      });
+
+      $(".previous_btn").on("click", function () {
+        if (currentIndex !== 0) {
+          move(currentIndex - 1);
+        } else {
+          move(3);
+        }
+      });
+
+      $.each($slides, function (index) {
+        var $button = $('<a class="slide_btn">&bull;</a>');
+
+        if (index === currentIndex) {
+          $button.addClass("active");
+        }
+        $button
+          .on("click", function () {
+            move(index);
+          })
+          .appendTo(".slide_buttons");
+        bulletArray.push($button);
+      });
+
+      advance();
+    });
+  </script>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</html>
